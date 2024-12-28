@@ -144,12 +144,12 @@ export class News extends Component {
   }
 
   handlePrevious = async () => {
-    console.log("handlePrevious")
-    let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page - 1}&pageSize=20`;
+    // console.log("handlePrevious")
+    // let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page - 1}&pageSize=20`;
 
-    let data = await fetch(urleverything);
-    let parseData = await data.json();
-    console.log(parseData);
+    // let data = await fetch(urleverything);
+    // let parseData = await data.json();
+    // console.log(parseData);
     this.setState({
      // articles: parseData.articles,
      articles: this.articles,
@@ -158,12 +158,12 @@ export class News extends Component {
   }
 
   handleNext = async () => {
-    console.log('handleNext')
-    let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page + 1}&pageSize=20`;
+    // console.log('handleNext')
+    // let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page + 1}&pageSize=20`;
 
-    let data = await fetch(urleverything);
-    let parseData = await data.json();
-    console.log(parseData);
+    // let data = await fetch(urleverything);
+    // let parseData = await data.json();
+    // console.log(parseData);
     this.setState({
       // articles: parseData.articles,
       articles: this.articles,
@@ -172,11 +172,11 @@ export class News extends Component {
   }
 
   async componentDidMount() {
-    let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page}&pageSize=20&limit=10`;
+    // let urleverything = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=fa0008577809498eab651be5ae11f1a9&page=${this.state.page}&pageSize=20&limit=10`;
 
-    let data = await fetch(urleverything);
-    let parseData = this.articles;//await data.json();
-    console.log(parseData);
+    // let data = await fetch(urleverything);
+    // let parseData = this.articles;//await data.json();
+    // console.log(parseData);
     // this.setState({ articles: parseData.articles });
     this.setState({ articles: this.articles});
   }
